@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" fill="none">
+  <defs>
+    <radialGradient id="bgGrad" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#1e3a5f"/>
+      <stop offset="100%" stop-color="#0d2240"/>
+    </radialGradient>
+    <radialGradient id="goldShine" cx="35%" cy="25%" r="65%">
+      <stop offset="0%" stop-color="#ffe88a"/>
+      <stop offset="40%" stop-color="#d4a017"/>
+      <stop offset="100%" stop-color="#8b6010"/>
+    </radialGradient>
+    <radialGradient id="goldLight" cx="30%" cy="20%" r="70%">
+      <stop offset="0%" stop-color="#fff4c2"/>
+      <stop offset="50%" stop-color="#e6b830"/>
+      <stop offset="100%" stop-color="#a0720f"/>
+    </radialGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+  </defs>
+
+  <!-- Circular navy background -->
+  <circle cx="100" cy="100" r="96" fill="url(#bgGrad)"/>
+  <!-- Gold ring border -->
+  <circle cx="100" cy="100" r="94" fill="none" stroke="url(#goldShine)" stroke-width="3.5"/>
+  <!-- Inner subtle ring -->
+  <circle cx="100" cy="100" r="86" fill="none" stroke="#d4a01740" stroke-width="1"/>
+
+  <!-- Caduceus staff (vertical) -->
+  <rect x="97.5" y="44" width="5" height="112" rx="2.5" fill="url(#goldShine)"/>
+
+  <!-- Caduceus wings -->
+  <!-- Left wing -->
+  <path d="M100 58 C82 48, 58 52, 54 64 C50 76, 64 80, 80 76 C68 84, 52 90, 54 102 C56 112, 70 112, 84 106" 
+        fill="none" stroke="url(#goldShine)" stroke-width="3.5" stroke-linecap="round"/>
+  <!-- Right wing -->
+  <path d="M100 58 C118 48, 142 52, 146 64 C150 76, 136 80, 120 76 C132 84, 148 90, 146 102 C144 112, 130 112, 116 106" 
+        fill="none" stroke="url(#goldShine)" stroke-width="3.5" stroke-linecap="round"/>
+
+  <!-- Left snake spiral -->
+  <path d="M100 70 C92 68, 80 72, 78 80 C76 88, 84 92, 92 90 C84 94, 74 100, 76 110 C78 120, 90 122, 100 118"
+        fill="none" stroke="url(#goldShine)" stroke-width="3" stroke-linecap="round"/>
+  <!-- Right snake spiral -->
+  <path d="M100 70 C108 68, 120 72, 122 80 C124 88, 116 92, 108 90 C116 94, 126 100, 124 110 C122 120, 110 122, 100 118"
+        fill="none" stroke="url(#goldShine)" stroke-width="3" stroke-linecap="round"/>
+
+  <!-- Staff tip circle top -->
+  <circle cx="100" cy="44" r="5" fill="url(#goldShine)"/>
+
+  <!-- KIDNEY silhouette shapes — left and right -->
+  <!-- Left kidney (mirrored bean) -->
+  <path d="M62 130 C48 128, 44 138, 46 148 C48 158, 56 163, 64 160 C70 158, 73 152, 72 146 C74 142, 76 138, 72 134 C70 131, 66 130, 62 130 Z"
+        fill="url(#goldShine)" opacity="0.92"/>
+  <!-- Left kidney inner highlight -->
+  <path d="M65 134 C60 133, 57 138, 58 144 C59 150, 63 153, 66 151 C68 150, 70 146, 69 142 C70 139, 70 136, 68 134 C67 133, 66 134, 65 134 Z"
+        fill="#0d2240" opacity="0.6"/>
+
+  <!-- Right kidney (bean) -->
+  <path d="M138 130 C152 128, 156 138, 154 148 C152 158, 144 163, 136 160 C130 158, 127 152, 128 146 C126 142, 124 138, 128 134 C130 131, 134 130, 138 130 Z"
+        fill="url(#goldShine)" opacity="0.92"/>
+  <!-- Right kidney inner highlight -->
+  <path d="M135 134 C140 133, 143 138, 142 144 C141 150, 137 153, 134 151 C132 150, 130 146, 131 142 C130 139, 130 136, 132 134 C133 133, 134 134, 135 134 Z"
+        fill="#0d2240" opacity="0.6"/>
+
+  <!-- Gold dots at wings -->
+  <circle cx="54" cy="64" r="3" fill="url(#goldShine)"/>
+  <circle cx="146" cy="64" r="3" fill="url(#goldShine)"/>
+  <circle cx="54" cy="102" r="3" fill="url(#goldShine)"/>
+  <circle cx="146" cy="102" r="3" fill="url(#goldShine)"/>
+</svg>
