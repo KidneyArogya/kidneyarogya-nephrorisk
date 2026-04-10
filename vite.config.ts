@@ -7,21 +7,21 @@ export default defineConfig({
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "src"),
-      "@assets": path.resolve(__dirname, "public"),
+      "@assets": path.resolve(__dirname, "public")
     },
-    dedupe: ["react", "react-dom"],
+    dedupe: ["react", "react-dom"]
   },
   root: path.resolve(__dirname),
   build: {
     outDir: "dist",
-    emptyOutDir: true,
+    emptyOutDir: true
   },
   server: {
     host: "0.0.0.0",
-    port: 5173,
+    port: 5173
   },
   preview: {
     host: "0.0.0.0",
-    port: 4173,
-  },
+    port: 4173
+  }
 });
